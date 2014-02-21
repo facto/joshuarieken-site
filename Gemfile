@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.0'
+
 gem 'rails', '4.0.3'
 gem 'pg'
 
@@ -12,4 +14,8 @@ gem 'high_voltage'
 
 group :development, :test do
   gem 'dotenv-rails'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
